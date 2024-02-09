@@ -1,4 +1,129 @@
 * {
     margin: 0;
     padding: 0;
-}
+  }
+  
+  .top {
+    background-image: url(img/Rectangle\ 1.jpeg);
+    width: 1440px;
+    height: 1024px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 556px;
+    background-size: cover;
+    
+  }
+  
+  .header__title {
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 78px;
+    letter-spacing: 0px;
+    text-align: left;
+    width: 788.78px;
+    height: 125.01px;
+    left: 120.22px;
+    right: 531px;
+    top: 217.1px;
+    bottom: 1237.89px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+    position: absolute;
+  }
+  
+  .header__text {
+    color: rgb(255, 255, 255);
+    font-family:Montserrat;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: left;
+    width: 481px;
+  height: 64px;
+  left: 120.22px;
+  right: 838.78px;
+  top: 374.11px;
+  bottom: 1141.89px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 32px;
+  position: absolute;
+  }
+  
+  .header__button {
+    border-radius: 30px;
+    background: rgb(156, 3, 50);
+    width: 234.06px;
+    height: 48.6px;
+    left: 120px;
+    right: 1085px;
+    top: 482.11px;
+    bottom: -482.11px;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    position: absolute;
+  }
+  .header__button:hover {
+    cursor: pointer;
+   
+  }
+  
+  .games {
+    height: 556px;
+    background: rgb(0, 9, 21);
+    display: flex;
+    align-items: center;
+    width: 1440px;
+  height: 556px;
+  left: 0;
+  right: 0;
+  top: 1024px;
+  bottom: 0;
+  position: absolute;
+   
+  
+  .box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 32px;
+    position: absolute;
+  }
+  .box__1 {
+    position: relative;
+    left: 120px;
+  }  
+  .box__img:hover {
+    border: 3px solid rgb(68, 210, 255);
+  border-radius: 16px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+    
+  }
+  .box__img {
+    border-radius: 16px;
+    width: 100%;
+    height: auto;
+  
+  }
+  
+  .box__text {
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: left;
+    position: absolute;
+    bottom: 32px;
+    left: 32px;
+    font-size: 18px;
+  }/*# sourceMappingURL=style.css.map */
