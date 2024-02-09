@@ -1,116 +1,134 @@
 * {
-    margin: 0;
     padding: 0;
-}
-
-.top {
-background-image: url(img/Rectangle\ 1.jpeg);
-width: 1440px;
-height: 1024px;
-left: 0;
-right: 0;
-top: 0;
-bottom: 556px;
-background-size: cover;
-background-repeat: no-repeat;
-
-}
-.header__title {
-    color: rgb(255, 255, 255);
-font-family: Montserrat;
-font-size: 64px;
-font-weight: 700;
-line-height: 78px;
-letter-spacing: 0px;
-text-align: left;
-width: 788.78px;
-height: 125.01px;
-left: 120.22px;
-right: 531px;
-top: 217.1px;
-bottom: 1237.89px;
-display: flex;
-flex-direction: row;
-align-items: center;
-gap: 32px;
-
-}
-.header__text {
-color: rgb(255, 255, 255);
-font-family: Montserrat;
-font-size: 18px;
-font-weight: 300;
-line-height: 32px;
-letter-spacing: 0px;
-text-align: left;
-width: 481px;
-height: 64px;
-left: 120.22px;
-right: 838.78px;
-top: 374.11px;
-bottom: 1141.89px;
-display: flex;
-flex-direction: row;
-align-items: left
-gap: 32px;
-Align left
-
-
-}
-.header__button {
-border-radius: 30px;
-background: rgb(156, 3, 50);
-width: 234.06px;
-height: 48.6px;
-left: 120px;
-right: 1085px;
-top: 482.11px;
-bottom: -482.11px;
-color: rgb(255, 255, 255);font-size: 18px;
-
-}
-.games {
-height: 556px;
-background: rgb(0, 9, 21);
-display: flex;
-align-items: center;
-width: 1440px;
-height: 556px;
-left: 0;
-right: 0;
-top: 1024px;
-bottom: 0;
-
-
-}
-
-.box {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    gap: 32px;
-    
-    &__1 {
-        position: relative;
-    }
-
-    &__img {
-        border-radius: 16px;
-         
-    }
-
-    &__text {
-    color: rgb(255, 255, 255);
+    margin: 0;
     font-family: Montserrat;
+    color: white;
+    border: none;
+    box-sizing: border-box;
+  }
+  
+  html {
+    background-color: #000915;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  // Common styles
+  .container {
+    max-width: 1440px;
+    padding: 0 120px;
+    margin: auto;
+  }
+  
+  h1 {
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 32px;
+  }
+  
+  h5 {
     font-size: 24px;
     font-weight: 600;
-    line-height: 32px;
-    letter-spacing: 0px;
-    text-align: left;
-    position: absolute;
-    bottom: 32px;
-    left: 32px;
+  }
+  
+  p {
     font-size: 18px;
+    line-height: 32px;
+    font-weight: 300;
+  }
+  
+  .highlightText {
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 700;
+  }
+  
+  button {
+    background-color: #9C0332;
+    border-radius: 30px;
+    min-width: 235px;
+    font-size: 18px;
+    transition: background-color .3s;
+    padding: 13px;
+  
+    &:hover {
+      background-color: #871438;
+      cursor: pointer;
     }
-
-}
+  }
+  
+  // Main section styles
+  .main {
+    background: url('./img/mainBg.png') no-repeat center;
+    background-size: cover;
+    height: 1024px;
+  
+    &-content {
+      padding-top: 220px;
+  
+      &-description {
+        margin-bottom: 44px;
+      }
+    }
+  }
+  
+  // Games list section styles
+  .games {
+    padding: 120px 0;
+  
+    &-list {
+      display: flex;
+      gap: 32px;
+  
+      &-item {
+        position: relative;
+        height: 300px;
+        width: 100%;
+        border-radius: 16px;
+        overflow: hidden;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 32px;
+        display: flex;
+        align-items: flex-end;
+  
+        &::after {
+          content: "";
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%);
+          bottom: 0;
+          left: 0;
+          
+        }
+        &:hover {
+            box-sizing: border-box;
+            border: 3px solid rgb(68, 210, 255);
+            border-radius: 16px;
+            
+            background: linear-gradient(180.00deg, rgba(39, 1, 15, 0),rgb(0, 25, 68) 100%),url(0003 (1));
+        }
+  
+        &-1 {
+          background-image: url('./img/game1.jpeg')
+        }
+  
+        &-2 {
+          background-image: url('./img/game2.jpeg')
+        }
+  
+        &-3 {
+          background-image: url('./img/game3.jpeg')
+        }
+  
+        &-text {
+          z-index: 1;
+          text-decoration: none;
+        }
+      }
+    }
+  }
