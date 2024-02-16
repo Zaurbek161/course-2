@@ -1,0 +1,119 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Montserrat;
+  color: white;
+  border: none;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #000915;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1440px;
+  padding: 0 120px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 64px;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+
+h5 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+p {
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 300;
+}
+
+.highlightText {
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 700;
+}
+
+button {
+  background-color: #9C0332;
+  border-radius: 30px;
+  min-width: 235px;
+  font-size: 18px;
+  transition: background-color 0.3s;
+  padding: 13px;
+}
+button:hover {
+  background-color: #871438;
+  cursor: pointer;
+}
+
+.main {
+  background: url("./img/mainBg.png") no-repeat center;
+  background-size: cover;
+  height: 1024px;
+}
+.main-content {
+  padding-top: 220px;
+}
+.main-content-description {
+  margin-bottom: 44px;
+}
+
+.games {
+  padding: 120px 0;
+}
+.games-list {
+  display: flex;
+  gap: 32px;
+}
+.games-list-item {
+  position: relative;
+  height: 300px;
+  width: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 32px;
+  display: flex;
+  align-items: flex-end;
+}
+.games-list-item::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%);
+  bottom: 0;
+  left: 0;
+}
+.games-list-item:hover {
+  box-sizing: border-box;
+  border: 3px solid rgb(68, 210, 255);
+  border-radius: 16px;
+  background: linear-gradient(180deg, rgba(39, 1, 15, 0), rgb(0, 25, 68) 100%), url(3 1);
+}
+.games-list-item-1 {
+  background-image: url("./img/game1.jpeg");
+}
+.games-list-item-2 {
+  background-image: url("./img/game2.jpeg");
+}
+.games-list-item-3 {
+  background-image: url("./img/game3.jpeg");
+}
+.games-list-item-text {
+  z-index: 1;
+  text-decoration: none;
+}/*# sourceMappingURL=style.css.map */
