@@ -53,10 +53,10 @@ age: 30,
 usAdmin: true};
 
 //-----------t-9.1--------------
-user['city of residence'] = 'Murmansk region';
+user['city of residence'] = 'Moskow';
 
 //-----------t-9.2--------------
-user['age'] = 8;
+user.age = 8;
 
 //-----------t-9.3--------------
 delete user['city of residence'];
@@ -66,5 +66,5 @@ let info = prompt('Какую информацию хотите узнать о 
 alert(user[info]);
 
 //-----------t-10-----------
-let whatsYourName = prompt('Введите Ваше имя');
-alert('Привет, ' + whatsYourName.toUpperCase() + '!');
+let whatsYourName = prompt('Введите Ваше имя:');
+alert (`Привет,  ${whatsYourName}`);  
