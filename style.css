@@ -15,6 +15,21 @@ a {
   text-decoration: none;
 }
 
+@media (max-width: 768px) {
+  .desktop {
+    display: none;
+  }
+}
+
+.mobile {
+  display: none;
+}
+@media (max-width: 768px) {
+  .mobile {
+    display: block;
+  }
+}
+
 .container {
   max-width: 1440px;
   padding: 0 120px;
@@ -38,12 +53,6 @@ p {
   font-weight: 300;
 }
 
-.highlightText {
-  font-size: 18px;
-  line-height: 32px;
-  font-weight: 700;
-}
-
 button {
   background-color: #9C0332;
   border-radius: 30px;
@@ -51,6 +60,7 @@ button {
   font-size: 18px;
   transition: background-color 0.3s;
   padding: 13px;
+  display: block;
 }
 button:hover {
   background-color: #871438;
@@ -78,7 +88,6 @@ button:hover {
 }
 .games-list-item {
   position: relative;
-  height: 300px;
   width: 100%;
   border-radius: 16px;
   overflow: hidden;
@@ -88,6 +97,7 @@ button:hover {
   padding: 32px;
   display: flex;
   align-items: flex-end;
+  aspect-ratio: 343/300;
 }
 .games-list-item::after {
   content: "";
@@ -116,4 +126,27 @@ button:hover {
 .games-list-item-text {
   z-index: 1;
   text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+  }
+  p {
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+  }
+  button {
+    margin: auto;
+  }
+  .main {
+    height: 735px;
+    background-position: 30%;
+  }
+  .games-list {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=style.css.map */
