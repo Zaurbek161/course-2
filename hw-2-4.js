@@ -7,10 +7,10 @@ do {
 
 //-----t-2-------
 
-    let i = 1;
-     while (i <= 5) {
-        console.log(i)
-       i++
+    let d = 1;
+     while (d <= 5) {
+        console.log(d)
+       d++
      };
 
 // ------t-3------
