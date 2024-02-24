@@ -11,7 +11,7 @@ function monthNumbers () {
     } else if (number === 9 || number === 10 || number === 11) {
             return "Осень";
     } else {
-        return "Введен не верный номер месяца"
+        return "Введен не верный номер месяца";
 
     }
 }
