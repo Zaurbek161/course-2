@@ -52,3 +52,6 @@ alert(`"Сегодня пятница, ${nextFridayDayNumber}-e число. Не
 nextFridayDayNumber += 7
 }
 }
+
+
+
