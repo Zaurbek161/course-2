@@ -1,7 +1,8 @@
 
 
 function monthNumbers () {
-    let number = prompt("Введите номер месяца");
+    let a = prompt("Введите номер месяца");
+    const number = Number (a)
     if (number === 1 || number === 2 || number === 12) {
         return "Зима";
     } else if (number === 3 || number === 4 || number === 5) {
@@ -16,4 +17,4 @@ function monthNumbers () {
     }
 }
 
-console.log (monthNumbers(number));
+console.log (monthNumbers());

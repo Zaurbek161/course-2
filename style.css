@@ -128,7 +128,6 @@ button:hover {
   box-sizing: border-box;
   border: 3px solid rgb(68, 210, 255);
   border-radius: 16px;
-  background: linear-gradient(180deg, rgba(39, 1, 15, 0), rgb(0, 25, 68) 100%), url(3 1);
 }
 .games-list-item-1 {
   background-image: url("./img/game1.jpeg");
