@@ -1,17 +1,17 @@
-//----t-1------------
-let a = prompt (`введите первое число`);
-let b = prompt (`Введите второе число`);
+// //----t-1------------
+// let a = prompt (`введите первое число`);
+// let b = prompt (`Введите второе число`);
 
-function numbers(a, b) {
-    return a < b ? a : b;
-}
-console.log(numbers(a, b));
+// function numbers(a, b) {
+//     return a < b ? a : b;
+// }
+// console.log(numbers(a, b));
 
-//-------t-2------------
+// //-------t-2------------
 // function checkNumber() {
 //   const number = prompt("Введите число");
 //   if (Number(number)) {
-//     if (Number(number) % 2 === 0) {
+//     if (Number(number) % 2 == 0) {
 //       return("Число четное");
 //     } else {
 //       return("Число нечетное");
@@ -22,7 +22,7 @@ console.log(numbers(a, b));
 // }
 // console.log(checkNumber()); 
 
-//----------t-3-------------
+// //----------t-3-------------
 
 // function squareOfTheNumber(inputNumber) {
 //     console.log(inputNumber ** 2);
@@ -34,50 +34,50 @@ console.log(numbers(a, b));
 //     return inputNumber ** 2;
 //   }
 
-//   //------------t-4------------
+// //   //------------t-4------------
 
-  // function sayHello() {
-  //   const age = prompt(`Сколько Вам лет?`);
-  //   if (age < 0) {
-  //     alert(`Вы ввели неправильное значение`);
-  //     return
-  //   } else if (age <= 12) {
-  //     alert(`Привет друг!`);
-  //   } else {
-  //     alert(`Добро пожаловать!`);
-  //   }
-  // }
+//   function sayHello() {
+//     const age = prompt(`Сколько Вам лет?`);
+//     if (age < 0) {
+//       alert(`Вы ввели неправильное значение`);
+      
+//     } else if (age <= 12) {
+//       alert(`Привет друг!`);
+//     } else {
+//       alert(`Добро пожаловать!`);
+//     }
+//   }
 
-  // sayHello();
+//   sayHello();
 
 // //----------------t-5----------------
 
-// function isNumber(a, b) {
+function isNumber(a, b) {
 
-//     if (
-//       typeof a !== 'number'||
-//       typeof b !== 'number'||
-//       isNaN(a) || isNaN(b)) {
-//       return 'Одно или оба значения не являются числом'
-//     }
-//       return a * b
-//   }
+    if (
+      typeof a !== 'number'||
+      typeof b !== 'number'||
+      isNaN(a) || isNaN(b)) {
+      return 'Одно или оба значения не являются числом'
+    }
+      return a * b
+  }
 
-//   console.log(isNumber(``, `нет`));
+  console.log(isNumber(``, `нет`));
 
-//   console.log(isNumber(2, 4));
-//   console.log(isNumber('',''));
-//   console.log(isNumber(null));
+  console.log(isNumber(2, 4));
+  console.log(isNumber('',''));
+  console.log(isNumber(null));
 
 // //-------------------t-6-------------
 
 // function cube() {
-//     let qwerty = prompt(`Введите число`);
-//     if (typeof Number(qwerty) !== 'number' || isNaN (Number(qwerty))){
+//     let qwerty = Number(prompt(`Введите число`));
+//     if (isNaN (Number(qwerty))){
     
 //       return `Переданный параметр не является числом`;
 //     } else {
-//       return `n в кубе равняется ${qwerty ** 3}`
+//       return `${qwerty} в кубе равняется ${qwerty ** 3}`
 //     }
 //   }
 //   console.log(cube()); 
@@ -120,3 +120,6 @@ console.log(numbers(a, b));
 // }
 
 // console.log (monthNumbers());
+
+
+
