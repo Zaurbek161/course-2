@@ -1,5 +1,3 @@
-
-
 function monthNumbers () {
     let a = Number(prompt("Введите номер месяца"));
     const number = Number (a)
