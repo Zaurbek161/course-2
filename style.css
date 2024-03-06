@@ -30,15 +30,31 @@ a {
   }
 }
 
+footer {
+  height: 80px;
+  border-top: 1px solid rgba(184, 212, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .container {
   max-width: 1440px;
   padding: 0 120px;
   margin: auto;
+  width: 100%;
 }
 
 h1 {
   font-size: 64px;
   font-weight: 700;
+  margin-bottom: 32px;
+}
+
+h2 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 59px;
   margin-bottom: 32px;
 }
 
@@ -58,7 +74,7 @@ button {
   border-radius: 30px;
   min-width: 235px;
   font-size: 18px;
-  transition: background-color 0.3s;
+  transition: background-color 0.2s;
   padding: 13px;
   display: block;
 }
@@ -112,7 +128,6 @@ button:hover {
   box-sizing: border-box;
   border: 3px solid rgb(68, 210, 255);
   border-radius: 16px;
-  background: linear-gradient(180deg, rgba(39, 1, 15, 0), rgb(0, 25, 68) 100%), url(3 1);
 }
 .games-list-item-1 {
   background-image: url("./img/game1.jpeg");
@@ -128,8 +143,63 @@ button:hover {
   text-decoration: none;
 }
 
+.seasons {
+  display: flex;
+  padding: 230px 0;
+}
+.seasons-content {
+  display: flex;
+  align-items: center;
+}
+.seasons-content-item {
+  width: 100%;
+}
+.seasons-content-item-description {
+  margin-bottom: 32px;
+}
+.seasons-content-item-image {
+  justify-content: flex-end;
+  display: flex;
+}
+
+.rememberWords {
+  display: flex;
+  padding: 230px 0;
+}
+.rememberWords-content {
+  display: flex;
+  align-items: center;
+}
+.rememberWords-content-item {
+  width: 100%;
+}
+.rememberWords-content-item-description {
+  margin-bottom: 32px;
+}
+.rememberWords-content-item-image {
+  display: flex;
+}
+
+.riddleGame {
+  background: url("./img/ridd.png") no-repeat center;
+  background-size: cover;
+  height: 800px;
+  display: flex;
+  align-items: center;
+}
+.riddleGame-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.riddleGame-content-description {
+  margin-bottom: 32px;
+}
+
 @media (max-width: 768px) {
-  h1 {
+  h1,
+  h2 {
     font-size: 32px;
     line-height: 39px;
     text-align: center;
@@ -148,5 +218,30 @@ button:hover {
   }
   .games-list {
     flex-direction: column;
+  }
+  .seasons {
+    padding-top: 51px;
+    padding-bottom: 85px;
+  }
+  .seasons-content {
+    flex-direction: column;
+    gap: 64px;
+  }
+  .seasons-content-item-image img {
+    width: 100%;
+  }
+  .rememberWords {
+    padding-top: 51px;
+    padding-bottom: 85px;
+  }
+  .rememberWords-content {
+    flex-direction: column-reverse;
+    gap: 64px;
+  }
+  .rememberWords-content-item-image img {
+    width: 100%;
+  }
+  .riddleGame {
+    height: 700px;
   }
 }/*# sourceMappingURL=style.css.map */
