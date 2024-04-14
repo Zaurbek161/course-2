@@ -10,16 +10,15 @@ console.log(numbers(a, b));
 // //-------t-2------------
 function checkNumber() {
   const number = prompt("Введите число");
-  if(!isNaN(Number(number)))
-  
-{
+
+  if (number && !isNaN(Number(number))) {
     if (Number(number) % 2 === 0) {
-      return("Число четное");
+      return "Число четное";
     } else {
-      return("Число нечетное");
+      return "Число нечетное";
     }
   } else {
-    return("Это не число");
+    return "Это не число";
   }
 }
 console.log(checkNumber());
@@ -75,7 +74,7 @@ function isNumber(a, b) {
 function cube() {
     let qwerty = prompt(`Введите число`);
     if(!qwerty || !parseInt(qwerty) || typeof Number(qwerty) !== 'number' || isNaN(Number(qwerty)))
-   
+
   {
 
       return `Переданный параметр не является числом`;
@@ -106,20 +105,18 @@ console.log(circle2.getArea());
 console.log(circle2.getPerimeter());
 
 // // //---------t-8---------
-function monthNumbers () {
-    let number = prompt("Введите номер месяца");
-    if (number === 1 || number === 2 || number === 12) {
-        return "Зима";
-    } else if (number === 3 || number === 4 || number === 5) {
-        return "Весна";
-    } else if (number === 6 || number === 7 || number === 8) {
-        return "Лето";
-    } else if (number === 9 || number === 10 || number === 11) {
-            return "Осень";
-    } else {
-        return "Введен не верный номер месяца";
-
-    }
+function monthNumbers() {
+  let num = prompt("Введите номер месяца");
+  const number = Number(num);
+  if (number === 1 || number === 2 || number === 12) {
+    console.log("Зима");
+  } else if (number === 3 || number === 4 || number === 5) {
+    console.log("Весна");
+  } else if (number === 6 || number === 7 || number === 8) {
+    console.log("Лето");
+  } else if (number === 9 || number === 10 || number === 11) {
+    console.log("Осень");
+  } else {
+    console.log("Введен не верный номер месяца");
+  }
 }
-
-console.log (monthNumbers());
