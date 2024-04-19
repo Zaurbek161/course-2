@@ -24,6 +24,7 @@ function checkNumber() {
 console.log(checkNumber());
 
 // //----------t-3-------------
+123
 
 function squareOfTheNumber(inputNumber) {
     console.log(inputNumber ** 2);
