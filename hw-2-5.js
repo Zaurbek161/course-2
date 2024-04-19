@@ -24,11 +24,7 @@ function checkNumber() {
 console.log(checkNumber());
 
 // //----------t-3-------------
-321
 
-
-
-4156
 function squareOfTheNumber(inputNumber) {
     console.log(inputNumber ** 2);
   }
@@ -124,3 +120,5 @@ function monthNumbers() {
     console.log("Введен не верный номер месяца");
   }
 }
+
+some code to pullrequest123
