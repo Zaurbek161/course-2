@@ -1,4 +1,4 @@
-
+123
 
 function monthNumbers () {
     let a = prompt("Введите номер месяца");
