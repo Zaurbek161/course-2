@@ -26,6 +26,9 @@ console.log(checkNumber());
 // //----------t-3-------------
 321
 
+
+
+4156
 function squareOfTheNumber(inputNumber) {
     console.log(inputNumber ** 2);
   }
