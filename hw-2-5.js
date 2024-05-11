@@ -50,8 +50,6 @@ function sayHello() {
 
 sayHello();
 
-// // //----------------t-5----------------
-
 function isNumber(a, b) {
   if (typeof a !== "number" || typeof b !== "number" || isNaN(a) || isNaN(b)) {
     return "Одно или оба значения не являются числом";
