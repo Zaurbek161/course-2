@@ -2,25 +2,19 @@
 let text = 'js';
 console.log(text.toUpperCase());
 
+//----------t-2-------------
 
-//----------t-2-------------  
-function filterStringsByPrefix(stringArray, prefix) {
-    prefix = prefix.toLowerCase();
-    let filteredArray = [];
-    for (let i = 0; i < stringArray.length; i++) {
-        let lowerString = stringArray[i].toLowerCase();
+const someFunc = (arrayOfString, prefix) => {
+  return arrayOfString.filter((element) => {
+    const pref = prefix.toLowerCase();
+    const el = element.toLowerCase();
 
-        if (lowerString.startsWith(prefix)) {
-            filteredArray.push(stringArray[i]);
-        }
-    }
-    return filteredArray;
-}
+    return el.startsWith(pref);
+  });
+};
+console.log(
+    someFunc(["QweRty123", "qwertyytrewq", "qwer", "qwerty00"], "qweRtY"))
 
-let arr = ["мама", "маша", "машина", "Петр", "трактор"];
-let prefix = "ма";
-let result = filterStringsByPrefix(arr, prefix);
-console.log(result);
 
 //-----------------t-3-----------------
 let number = 32.58884;

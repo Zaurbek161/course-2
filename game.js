@@ -19,28 +19,40 @@
 
 // console.log(monthNumbers());
 
-
-
 //---------Запомни слова------
 function memorization() {
-    const wordsToRemember = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+  const wordsToRemember = [
+    "Яблоко",
+    "Груша",
+    "Дыня",
+    "Виноград",
+    "Персик",
+    "Апельсин",
+    "Мандарин",
+  ];
 
-    alert('Прочитай и запомни данные слова:\n\nЯблоко, Груша, Дыня, Виноград, Персик, Апельсин, Мандарин\n\nЕсли запомнил нажимай OK');
+  alert(
+    "Прочитай и запомни данные слова:\n\nЯблоко, Груша, Дыня, Виноград, Персик, Апельсин, Мандарин\n\nЕсли запомнил нажимай OK"
+  );
 
-    let checkingWords = prompt('А теперь напряги память и напиши, что запомнил(а) через пробел');
+  let checkingWords = prompt(
+    "А теперь напряги память и напиши, что запомнил(а) через пробел"
+  );
 
-    if (checkingWords === null || checkingWords.trim() === '') {
-        alert('Ты не ввел(а) ни одного слова. Попробуй еще раз!');
-        return;
-    }
+  if (checkingWords === null || checkingWords.trim() === "") {
+    alert("Ты не ввел(а) ни одного слова. Попробуй еще раз!");
+    return;
+  }
 
-    const userWords = new Set(checkingWords.toLowerCase().split(' '));
+  const userWords = new Set(checkingWords.toLowerCase().split(" "));
 
-    const correctOrder = [...wordsToRemember].every(word => userWords.has(word.toLowerCase()));
+  const correctOrder = [...wordsToRemember].every((word) =>
+    userWords.has(word.toLowerCase())
+  );
 
-    if (correctOrder) {
-        alert('Молодец! Правильно!');
-    } else {
-        alert('Попробуй ещё раз');
-    }
+  if (correctOrder) {
+    alert("Молодец! Правильно!");
+  } else {
+    alert("Попробуй ещё раз");
+  }
 }
