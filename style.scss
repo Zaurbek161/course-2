@@ -45,7 +45,14 @@
     padding: 0 120px;
     margin: auto;
     width: 100%;
+    @media (
+     max-width: 768px 
+    )
+    {
+      padding: 0 15px;
+    }
   }
+  
   
   h1 {
     font-size: 64px;
